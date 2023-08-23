@@ -30,7 +30,7 @@ async function getcurrent2(x){
 
 
      /*  Fetch the Data (APi) */
-    var country= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4f004be0292b47f2a86141247230508&q=${x}&days=7`);
+    var country= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4f004be0292b47f2a86141247230508&q=${x}&days=7`);
     var country2= await country.json();
     console.log(country2)
 
@@ -52,7 +52,7 @@ async function getcurrent(){
 
 
      /*  Fetch the Data (APi) */
-    var country= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4f004be0292b47f2a86141247230508&q=${cityname}&days=7`);
+    var country= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4f004be0292b47f2a86141247230508&q=${cityname}&days=7`);
     var country2= await country.json();
 
     /* Find the day */
